@@ -8,7 +8,7 @@ T/R 3:30 P.M - 4:45 P.M
 Assignment #4: Virtual Memory
 Source.c
 
-Version 5.0
+Version 6.0
 
 The program works as expected and follows
 program specifications.  It translates
@@ -301,9 +301,9 @@ void mapVirtualAddr()
 
 void freeStuff() // Deallocate memory
 {
-	if (pageTable != NULL) // Is the cache null?
+	if (pageTable != NULL) // Is the page table null?
 	{
-		free(pageTable); // There's no more lines that were dynamically allocated, so free the cache now
+		free(pageTable); // So free the page table now
 		pageTable = NULL;
 	}
 	return;
